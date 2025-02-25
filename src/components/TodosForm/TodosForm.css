@@ -1,0 +1,11 @@
+.main {
+  padding-bottom: 30px;
+}
+
+.todos-form__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0 10px 10px 2px rgba(34, 60, 80, 0.2);
+}

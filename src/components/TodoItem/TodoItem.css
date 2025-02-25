@@ -1,0 +1,25 @@
+.todo-list__checkbox {
+  padding: 0;
+  border: 1px solid transparent;
+  background: none;
+  max-width: 40px;
+  max-height: 40px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.todo-list__checkbox:focus-visible {
+  border-color: var(--orange-opacity);
+  border-radius: 3px;
+  outline: none;
+}
+
+.todo-list__text {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+}
+
+.todo-list__text--line {
+  text-decoration: line-through;
+  color: var(--grey-light-color);
+}

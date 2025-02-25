@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Roboto';
+  src:
+    local('Roboto Light'),
+    local('Roboto-Light'),
+    url('./assets/fonts/Roboto-Light.woff2') format('woff2'),
+    url('./assets/fonts/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --black-color: #000;
+  --white-color: #f9f9f9;
+  --grey-light-color: #e5e5e5;
+  --grey-text-color: #717171;
+  --orange: rgba(255, 115, 0, 0.747);
+  --orange-opacity: rgba(255, 115, 0, 0.3);
+}

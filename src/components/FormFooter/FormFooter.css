@@ -1,0 +1,55 @@
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--grey-text-color);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.15),
+    0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0, 0, 0, 0.15),
+    0 20px 0 -10px #eee,
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+}
+
+.form-footer__count {
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  user-select: none;
+}
+
+.form-footer__button-wrap {
+  display: flex;
+  gap: 20px;
+  margin-right: 10px;
+}
+
+.form-footer__button {
+  margin: 0;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: var(--grey-text-color);
+  text-align: center;
+  transition:
+    border-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.form-footer__button:focus {
+  border-color: var(--orange-opacity);
+}
+
+.form-footer__button:hover {
+  border-color: var(--orange-opacity);
+}
+
+.form-footer__button:active {
+  border-color: var(--orange);
+  color: var(--orange);
+}

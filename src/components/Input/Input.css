@@ -1,0 +1,14 @@
+.input-todo {
+  padding: 20px 50px 20px 70px;
+  border: none;
+  border-bottom: 1px solid var(--grey-light-color);
+  width: 100%;
+  outline: none;
+  font-size: 28px;
+  color: var(--black-color);
+}
+
+.input-todo::placeholder {
+  font-style: italic;
+  opacity: 0.2;
+}

@@ -1,0 +1,8 @@
+.todo-list__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 10px 15px 10px;
+  border-bottom: 1px solid var(--grey-light-color);
+  color: var(--black-color);
+}
