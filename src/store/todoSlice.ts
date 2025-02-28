@@ -75,6 +75,12 @@ const todoSlice = createSlice({
       state.activeTodos = [...state.todos];
       state.currentTodos = state.todos;
     },
+    clearAllTodos(state) {
+      state.todos.length = 0;
+      state.activeTodos.length = 0;
+      state.completedTodos.length = 0;
+      state.currentTodos.length = 0;
+    },
   },
 });
 
@@ -85,6 +91,7 @@ export const {
   showActive,
   showCompleted,
   clearCompleted,
+  clearAllTodos,
 } = todoSlice.actions;
 
 export default todoSlice.reducer;

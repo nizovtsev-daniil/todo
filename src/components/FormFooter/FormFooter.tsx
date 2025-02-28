@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { useAppDispatch, useAppSelector } from '../../hooks/useAppRedux';
+import { useAppDispatch } from '../../hooks/useAppRedux';
 import {
   showActive,
   showCompleted,
@@ -8,15 +8,16 @@ import {
 } from '../../store/todoSlice';
 import './FormFooter.css';
 
-export const FormFooter: FC = () => {
-  const dispatch = useAppDispatch();
-  const { todos } = useAppSelector((state) => state.todos);
+interface FormFooterProp {
+  count: number;
+}
 
-  const activeItems = todos.filter((todo) => todo.completed === false);
+export const FormFooter: FC<FormFooterProp> = ({ count }) => {
+  const dispatch = useAppDispatch();
 
   return (
     <div className='form-footer'>
-      <p className='form-footer__count'>{activeItems.length} items left</p>
+      <p className='form-footer__count'>{`${count} items left`}</p>
       <div className='form-footer__button-wrap'>
         <button
           className='btn-reset form-footer__button'
